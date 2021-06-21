@@ -1,12 +1,24 @@
 import React from 'react'
- function Ccomponent(props) {
-    return (
-        <div>
-            <h1>
-                Class component, {this,props.numbers.join(',')}
-            </h1>
-        </div>
-    )
-}
+import Menu from './Menu'
 
+class Ccomponent extends React.Component {
+    constructor(props) {
+        super(props)
+    
+        this.state = {
+            name: 'Alex'
+        }
+    }
+
+    render() {
+        const name = this.state.name
+        return (
+            <div>
+                <h1>
+                    Class component {name}
+                </h1>
+            </div>
+        );
+    } 
+}
 export default Ccomponent;

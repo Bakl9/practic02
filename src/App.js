@@ -7,14 +7,10 @@ import Menu from './Menu';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Fcomponent 
-        name='Alex'
-        />
+      <header className="App-header">       
         <Ccomponent 
         numbers={[1,2,3,4,5]}
         />
-        <Menu />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
